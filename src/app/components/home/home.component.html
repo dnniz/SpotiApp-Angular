@@ -1,0 +1,19 @@
+<div class="card-columns">
+    <div class="card" *ngFor="let album of albumRelease">
+      <img [src]="album.images[0].url" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{album.name}}</h5>
+        <p class="card-text">
+            <small class="text-muted ">({{album.release_date}})</small>
+        </p>
+      </div>
+      <div class="card-footer">
+        <a *ngFor="let artist of album.artists"
+            href="#"
+            data-toggle="popover-hover"
+            class="badge badge-dark">{{artist.name}}
+        </a>
+      </div>
+    </div>
+    
+  </div>
