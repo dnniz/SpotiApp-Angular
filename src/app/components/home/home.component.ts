@@ -19,8 +19,6 @@ export class HomeComponent implements OnInit {
              this.albumRelease = data;
              console.log("ARRAY", this.albumRelease);
           })
-
-         
   }
 
   ngOnInit(): void {
