@@ -13,6 +13,8 @@ import { HttpClientModule } from "@angular/common/http";
 //Routes
 import { APP_ROUTING } from "./app.route";
 
+import { ServiceManager } from "./services/serviceManager";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,7 @@ import { APP_ROUTING } from "./app.route";
     HttpClientModule,
     APP_ROUTING
   ],
-  providers: [],
+  providers: [ServiceManager],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
